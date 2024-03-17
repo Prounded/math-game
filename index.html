@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Math</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">Fast Math</div>
+    <div class="boardImage">
+        <img src="background_Math.png" alt="">
+    </div>
+    <div class="theOpeningDisplay">
+    <div class="titleOpening" id="titleOpening">Press The Button To Start!</div>
+    <div class="buttonStart" id="buttonStart">&#9873</div>
+    </div>
+
+    <div class="questionDisplay" id="questionDisplay"></div>
+
+    <div class="keyboard" id="keyboard">
+        <div class="buttonInput" onclick="setAnswers(1)" id="1">1</div>
+        <div class="buttonInput" onclick="setAnswers(2)" id="2">2</div>
+        <div class="buttonInput" onclick="setAnswers(3)" id="3">3</div>
+        <div class="buttonInput" onclick="setAnswers(4)" id="4">4</div>
+        <div class="buttonInput" onclick="setAnswers(5)" id="5">5</div>
+        <div class="buttonInput" onclick="setAnswers(6)" id="6">6</div>
+        <div class="buttonInput" onclick="setAnswers(7)" id="7">7</div>
+        <div class="buttonInput" onclick="setAnswers(8)" id="8">8</div>
+        <div class="buttonInput" onclick="setAnswers(9)" id="9">9</div>
+        <div class="buttonInput" id="backSpace" onclick="setAnswers('Backspace')">&#10008</div>
+        <div class="buttonInput" onclick="setAnswers(0)" id="0">0</div>
+        <div class="buttonInput" id="enter" onclick="setAnswers('Enter')">&#10004</div>
+    </div>
+
+    <div class="highscores">
+        <div class="highscoreTitle">Highscore : </div>
+        <div class="highscoreDisplay" id="highscoreDisplay">-</div>
+    </div>
+
+    <div class="timers" id="timers">
+        <div class="secondsDisplay" id="secondsDisplay">-</div>
+    </div>
+
+    <div class="points">
+        <div class="titlePoint">Score :</div>
+        <div class="pointsDisplay" id="pointsDisplay">0</div>
+        <div class="updateScore" id="updateScore"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
